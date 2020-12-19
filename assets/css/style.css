@@ -8,37 +8,43 @@ body{
 }
 
 .hero-img{
-    height: 100%;
-    width: 40%;
-    background: url(/workspace/MSP1-portfolio-BrianFD/assets/images/IMG_0715.jpg) no-repeat center center;
+    width: 800px;
+    height: 900px;
+    background:url(/workspace/MSP1-portfolio-BrianFD/assets/images/IMG_1206.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
-    animation: banner 4s ease-in both;
-   -webkit-animation: banner 4s ease-in both;
-   -o-animation: banner 4s ease-in both;
-   -moz-animation: banner 4s ease-in both;
+    animation: banner 3s ease-in forwards;
+   -webkit-animation: banner 3s ease-in forwards;
+   -o-animation: banner 3s ease-in forwards;
+   -moz-animation: banner 3s ease-in forwards;
+   overflow: hidden;
 }
 
 .hero-text{
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
+    color: blanchedalmond;
+    
 }
 
 @keyframes banner {
-  from { width: 40%;}
-  to { width: 100%;}
+  from { width: 800px; }
+  to { width: 1200px;}
 }
 
 /*________NAVBAR____________*/
 
 .nav-bar{
-    display:inline-block;
+    display:block;
+    float: right;
+    margin: auto;
 }
-
+.nav-item,ul{
+     text-decoration: none;
+}
 .nav-bar:hover{
-    background-color: rgba(0, 0, 0, 0.5)
+    color: rgba(0, 0, 0, 0)!important;
 }
-
-.nav-heading{
+a{
     color: #fafafafa;
 }
